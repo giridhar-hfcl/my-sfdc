@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="LWC publisher" icon-name="custom:custom14">
+
+        <div class="slds-var-m-around_medium">
+            <p>MessageChannel: MyMessageChannel__c</p>
+        </div>
+
+        <div class="slds-var-p-around_medium lgc-bg">
+            <lightning-input type="text" label="Enter some text" value={myMsg} onchange={handleChange}></lightning-input><br/>
+            <lightning-button label="Publish" onclick={publishMc}></lightning-button>
+        </div>
+
+    </lightning-card>
+</template>

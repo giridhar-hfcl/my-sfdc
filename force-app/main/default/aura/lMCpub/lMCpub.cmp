@@ -1,0 +1,14 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+access="global">
+
+<aura:attribute type='string' name='msgIp' default='' />
+
+<lightning:card title="Aura publisher">
+    <div class="slds-var-m-around_medium">
+        <lightning:input name="msg" label="Message" value="{!v.msgIp}"></lightning:input>
+        <lightning:button label="Publish" onclick="{!c.publishMsg}" />
+        <lightning:messageChannel type="MyMessageChannel__c" aura:id="SAMPLEMC"/>
+        
+    </div>
+</lightning:card>
+</aura:component>	
