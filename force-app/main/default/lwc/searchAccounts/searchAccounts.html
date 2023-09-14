@@ -1,0 +1,39 @@
+<template>
+    <form class="container">
+        <h1>Search for account</h1>
+        <lightning-input
+            label="Account Name"
+            name="name"
+            value={account.name}
+            onchange={changeHandler}
+        ></lightning-input>
+        <lightning-input
+            label="Account Phone"
+            name="phone"
+            value={account.phone}
+            onchange={changeHandler}
+        ></lightning-input>
+        <lightning-input
+            label="Billing City"
+            name="billingCity"
+            value={account.billingCity}
+            onchange={changeHandler}
+        ></lightning-input>
+        <lightning-input
+            label="Billing Street"
+            name="billingStreet"
+            value={account.billingStreet}
+            onchange={changeHandler}
+        ></lightning-input>
+        <lightning-input
+            label="Billing Zipcode"
+            name="billingZip"
+            value={account.billingZip}
+            onchange={changeHandler}
+        ></lightning-input>
+
+        <lightning-button label="Search" name="search" onclick={searchAccount}
+            >Search</lightning-button
+        >
+    </form>
+</template>

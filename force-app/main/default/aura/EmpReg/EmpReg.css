@@ -1,0 +1,10 @@
+.THIS.form {
+    padding: 60px;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    min-width: 400px;
+    max-width: fit-content;
+    height: fit-content;
+    background: #fff;
+}

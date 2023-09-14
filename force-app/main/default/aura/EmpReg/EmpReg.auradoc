@@ -1,0 +1,6 @@
+<aura:documentation>
+	<aura:description>Form Docs: This form is used to add the new employee to company db</aura:description>
+	<aura:example name="ExampleName" ref="c:EmpReg" label="Employee Registration Form">
+		Basic stuff about the employee registration form
+	</aura:example>
+</aura:documentation>

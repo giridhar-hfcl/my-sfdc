@@ -1,0 +1,79 @@
+<apex:page
+    tabStyle="Account"
+    showHeader="false"
+    sidebar="false"
+    rendered="true"
+>
+    <style type="text/css">
+        body {
+            padding: 30px;
+            margin: 10px auto;
+            max-width: 1080px;
+        }
+    </style>
+    <apex:sectionHeader
+        title="Employee"
+        subtitle="Employeeeeee name"
+        description="Home for information about employee details"
+        help="https://employee.pages.dev/"
+    />
+    <apex:form>
+        <apex:pageBlock title="Contact">
+            <apex:pageBlockButtons location="top">
+                <apex:commandLink
+                    value="Website"
+                    title="Personal website"
+                    action="https://employee.pages.dev"
+                    style="margin-right: 8px"
+                />
+                <apex:commandButton
+                    value="GitHub"
+                    style="
+                        color: #fafafa;
+                        background: #171515;
+                        padding: 8px 16px;
+                        border-radius: 8px;
+                        border: none;
+                    "
+                    action="https://github.com/"
+                />
+                <apex:commandButton
+                    value="LinkedIn"
+                    style="
+                        color: #fafafa;
+                        background: #0a66c2;
+                        padding: 8px 16px;
+                        border-radius: 8px;
+                        border: none;
+                    "
+                    action="https://linkedin.com/"
+                />
+                <apex:commandButton
+                    value="Instagram"
+                    style="
+                        color: #fafafa;
+                        background: #d62976;
+                        padding: 8px 16px;
+                        border-radius: 8px;
+                        border: none;
+                    "
+                    action="https://instagram.com/"
+                />
+                <apex:commandButton
+                    value="Twitter"
+                    style="
+                        color: #fafafa;
+                        background: #00acee;
+                        padding: 8px 16px;
+                        border-radius: 8px;
+                        border: none;
+                    "
+                    action="https://twitter.com/"
+                />
+            </apex:pageBlockButtons>
+            <h1>employee</h1>
+
+            is saying that sum of 10 and 5 is {!10 + 5}
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

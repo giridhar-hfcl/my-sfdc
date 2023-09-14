@@ -1,0 +1,4 @@
+<aura:component>
+    <aura:registerEvent name="myEvt" type="c:newEvt" />
+    <button name="mybtn" onclick="{!c.fireEvt}">Press me</button>
+</aura:component>

@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Edit Record" icon-name="custom:custom16">
+        <div class="slds-var-m-around_medium">
+    <lightning-record-edit-form
+        object-api-name={objectApiName}
+        record-id={recordId}>
+    <lightning-messages></lightning-messages>
+    <div class="slds-grid">
+        <div class="slds-col slds-size_1-of-2">
+            <lightning-input-field field-name="Name"></lightning-input-field>
+            <lightning-input-field field-name="Description__c"></lightning-input-field>
+        </div>
+        <div class="slds-col slds-size_1-of-2">
+            <lightning-input-field field-name="Price__c"></lightning-input-field>
+            <lightning-input-field field-name="Stock__c"></lightning-input-field>
+        </div>
+    </div>
+    <div class="slds-m-top_medium">
+        <lightning-button type="submit" variant="brand" label="Edit Record"></lightning-button>
+    </div>
+    </lightning-record-edit-form>
+</div></lightning-card>
+</template>

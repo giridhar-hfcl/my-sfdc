@@ -1,0 +1,10 @@
+<apex:page StandardController="Employee__c" recordSetVar="obj">
+    <apex:form>
+        <apex:pageBlock title="Employee Details">
+            <apex:pageBlockSection title="Employee Information(Data List)">
+                <apex:dataList var="er" value="{!obj}">
+                    <apex:outputText value="{!er.Name}" />
+                </apex:dataList>
+            </apex:pageBlockSection>
+        </apex:pageBlock> </apex:form
+></apex:page>

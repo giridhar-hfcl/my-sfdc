@@ -1,0 +1,13 @@
+<aura:component
+    implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction"
+    access="global"
+>
+    <aura:attribute type="String" name="name" default="Pran" />
+
+    <div class="container">
+        <p class="heading">
+            This is the {!v.name}'s struggle for creating lightning aura
+            components.
+        </p>
+    </div>
+</aura:component>

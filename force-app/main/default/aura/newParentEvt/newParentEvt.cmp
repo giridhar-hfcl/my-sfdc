@@ -1,0 +1,4 @@
+<aura:component>
+    <c:newChildEvt />
+    <aura:handler name="myEvt" event="c:newEvt" action="{!c.handleNewEvt}" />
+</aura:component>

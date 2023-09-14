@@ -1,0 +1,52 @@
+<apex:page controller="getEmployee" tabStyle="invoice">
+    <apex:form>
+        <apex:pageBlock title="Employee Details">
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton value="GET" action="{!get_record}" />
+                <apex:commandButton value="CANCEL" action="{!cancel}" />
+            </apex:pageBlockButtons>
+
+            <apex:pageBlockSection title="Get Employee" collapsible="false">
+                <apex:pageBlockSectionItem>
+                    <apex:outputLabel value="Employee Id" />
+                    <apex:inputText
+                        value="{!empid}"
+                    /> </apex:pageBlockSectionItem
+                ><br />
+            </apex:pageBlockSection>
+
+            <apex:pageBlockSection
+                title="Employee Information"
+                collapsible="false"
+            >
+                <apex:pageBlockSectionItem>
+                    <apex:outputLabel value="Employee Name" />
+                    <apex:outputText
+                        value="{!ename}"
+                    /> </apex:pageBlockSectionItem
+                ><br />
+
+                <apex:pageBlockSectionItem>
+                    <apex:outputLabel value="Employee Salary" />
+                    <apex:outputText
+                        value="{!salary}"
+                    /> </apex:pageBlockSectionItem
+                ><br />
+
+                <apex:pageBlockSectionItem>
+                    <apex:outputLabel value="Employee Deptno" />
+                    <apex:outputText
+                        value="{!dept}"
+                    /> </apex:pageBlockSectionItem
+                ><br />
+
+                <apex:pageBlockSectionItem>
+                    <apex:outputLabel value="Employee Designation" />
+                    <apex:outputText
+                        value="{!job}"
+                    /> </apex:pageBlockSectionItem
+                ><br />
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

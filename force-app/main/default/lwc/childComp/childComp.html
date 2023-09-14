@@ -1,0 +1,26 @@
+<template>
+    <div class="slds-m-around_medium label-class">
+        <h1>{headerLabel}</h1>
+        <lightning-input
+            label="Name"
+            value={greeting}
+            onchange={changeHandler}
+        ></lightning-input>
+        <p>Your input: {greeting}</p>
+
+        <lightning-input
+            label="First Name"
+            name="firstName"
+            value={fullName.firstName}
+            onchange={changeNameHandler}
+        ></lightning-input>
+        <lightning-input
+            label="Last Name"
+            name="lastName"
+            value={fullName.lastName}
+            onchange={changeNameHandler}
+        ></lightning-input>
+
+        <p>Hello, {uppercasedFullName}!</p>
+    </div>
+</template>

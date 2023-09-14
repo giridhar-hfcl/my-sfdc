@@ -1,0 +1,18 @@
+.THIS {
+    margin: 0;
+    padding: 0;
+}
+
+.THIS.container {
+    padding: 30px;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    max-width: fit-content;
+    height: fit-content;
+    background: #fff;
+}
+
+.THIS.heading {
+    font-size: 20px;
+}
